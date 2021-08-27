@@ -1,0 +1,1 @@
+The project is to recreate the google home page. First time creating anything using HTML and CSS.
