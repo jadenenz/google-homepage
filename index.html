@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <style>
-    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 </style>
 <html>
 <head>
     <meta charset="UTF-8"
-    <title>Google</title>
 </head>
     <body>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" </img>
+        <div class=logo>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" </img>
 
-        <input type="text"> <button id="searchbutton">Search</button></input>
+        </div>
+        <div class="search">
+            <input type="text"> <button id="searchbutton">Search</button></input>
 
+        </div>
+        
     </body> 
 
 </html>
