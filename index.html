@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <style>
 
+
     .logo {
         display: flex;
         flex-direction: column;
         align-items: center;
 
+    }
+
+    a {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        text-decoration: none;
+    }
+
+    a:visited {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: #222;
+        text-decoration-style: solid;
+        text-decoration-line: none;
+        text-decoration: inherit;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     .search {
@@ -72,17 +96,33 @@
         border: 1px solid #f8f9fa;
     }
 
-        
+    #searchicon {
+        display: flex;
+        align-items: center;
+        padding-right: 13px;
+        margin-top: -5px;
+    }   
 
-    #lucky {
-        /*display: flex;
-        flex-direction: row;*/
+    span {
+        color: #9aa0a6
     }
 
+    body {
+        font-size: 14px;
+        font-family: arial, sans-serif;
+        color: #222;
+    }
+
+
     ul {
+        -moz-appearance: none;
+        -webkit-appearance: none;
         list-style-type: none;
         margin: 0;
         padding: 0;
+        color: #222;
+        list-style: none;
+        
 
     }
 
@@ -93,6 +133,8 @@
 </style>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
     <meta charset="UTF-8"
 </head>
     <body>
@@ -106,6 +148,7 @@
         </div>
         <div class="search">
             <div class="searchcontainer">
+                <span id="searchicon" class="material-icons">search</span>
                 <input type="text"></input>
             </div>
             <div class="searchbuttons">
