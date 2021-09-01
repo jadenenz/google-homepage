@@ -151,12 +151,32 @@
     .footerbar {
         display: flex;
         background-color: #f2f2f2;
+        justify-content: space-between;
     }
 
     .leftfooter {
         display: flex;
-
+        justify-content: flex-start;
+        min-width: 30%;
+        order: 1;
         
+    }
+
+    .middlefooter {
+        order: 2;
+        display: block;
+    }
+
+    .rightfooter {
+        order: 3;
+        display: flex;
+        justify-content: flex-end;
+        min-width: 30%
+    }
+
+    .footerlink {
+        display: block;
+        padding: 15px;
     }
 
 </style>
@@ -190,10 +210,18 @@ rel="stylesheet">
 
             </div>
             <div class="footerbar">
-                <div class="leftfooter"
-                    <a href"">Advertising</a>
-                    <a href""> Business</a>
-                    <a href"">How Search Works</a>
+                <div class="leftfooter">
+                    <a class="footerlink" href="">Advertising</a>
+                    <a class="footerlink" href=""> Business</a>
+                    <a class="footerlink" href="">How Search Works</a>
+                </div>
+                <div class="middlefooter">
+                    <a class="footerlink" href="">Carbon neutral since 2007</a>
+                </div>
+                <div class="rightfooter">
+                    <a class="footerlink" href="">Privacy</a>
+                    <a class="footerlink" href="">Terms</a>
+                    <a class="footerlink" href="">Settings</a>
                 </div>
             </div>
         </div>
