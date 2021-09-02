@@ -7,10 +7,77 @@
         height: 100%;
     }
 
+    .headerbar {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        padding: 6px;
+        justify-content: space-between;
+    }
+
+    .headermiddle {
+        min-width: auto;
+        position: relative;
+        height: 48px;
+    }
+
+    .headerright {
+        display: flex;
+        float: right;
+        justify-content: flex-end;
+        order: 2;
+        min-width: 30%;
+        align-items: center;
+    }
+
+    .rightheaderlinkcontainer,  {
+        display: flex;
+        padding-right: 15px;
+    }
+
+    .rightheaderimgcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+
+        
+
+
+}
+
+    .rightheaderlink {
+        display: inline-block;
+        line-height: 24px;
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    #apps {
+        color: #5f6368;
+        opacity: 1;
+        padding-right: 10px;
+    }
+
+    .account {
+        background-size: 32px 32px;
+        border: 0;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        display: block;
+        margin: 0px;
+        position: relative;
+        height: 32px;
+        width: 32px;
+        z-index: 0;
+        
+    }
+
     .logo {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 100px;
 
     }
 
@@ -38,13 +105,7 @@
     }
 
     .search {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: ;
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
+        
     
 
     }
@@ -76,6 +137,8 @@
         display: flex;
         flex-direction: row;
         padding: 16px;
+        justify-content: center;
+
 
     }
 
@@ -87,23 +150,25 @@
         padding: 6px;
     }
 
-    #searchbutton {
+    #searchbutton, #lucky {
         margin-right: 4px;
         padding-right: 16px;
         padding-left: 16px;
         font-family: arial, sans-serif;
         background-color: #f8f9fa;
         border: 1px solid #f8f9fa;
+        padding: 0 16px;
+        height: 36px;
     }
  
-    #lucky {
+    /*#lucky {
         margin-right: 4px;
         padding-right: 16px;
         padding-left: 16px;
         font-family: arial, sans-serif;
         background-color: #f8f9fa;
         border: 1px solid #f8f9fa;
-    }
+    }*/
 
     #searchicon {
         display: flex;
@@ -177,6 +242,7 @@
     .footerlink {
         display: block;
         padding: 15px;
+        color: #70757a;
     }
 
 </style>
@@ -184,14 +250,33 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet">
-    <meta charset="UTF-8"
+    <meta charset="UTF-8">
 </head>
     <body>
         <div class="wholepage">
-            <ul>
-                <li><a href="" class="aboutbutton">About</a></li>
-                <li><a href="" class="storebutton">Store</a></li>
-            </ul>
+            <div class="headerbar">
+                <ul>
+                    <li><a href="" class="aboutbutton">About</a></li>
+                    <li><a href="" class="storebutton">Store</a></li>
+                </ul>
+                <div class="headermiddle">
+                <div class="headerright">
+                    <div class="rightheaderlinkcontainter">
+                        <a class="rightheaderlink" href="">Gmail</a>
+                        <a class="rightheaderlink" href="">Images</a>
+                    </div>
+                    <div class="rightheaderimgcontainer">
+                        <span id="apps" class="material-icons">
+                            apps
+                        </span>
+                        <img class="account" src="https://lh3.googleusercontent.com/ogw/ADea4I5EYodrK1LGrtenni9pUkZtxQzU0vXoVO2PbNId=s32-c-mo">
+
+                    </div>
+                        
+                </div>
+                </div>
+            </div>
+           
             <div class="logo">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" </img>
 
